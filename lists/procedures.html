@@ -119,43 +119,47 @@ All Procedures &ndash; cafut
 			 <thead><tr><th>Procedure</th><th>Location</th><th>Procedure Type</th><th>Description</th></tr></thead>
 			 <tbody>
 			 
-			   <tr><td><a href='../proc/addunittest.html'>addUnitTest</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td></td></tr>
+			   <tr><td><a href='../proc/addunittest.html'>addUnitTest</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td><p>Add a Test object to the test suite and make it available for setup.</p></td></tr>
 			 
-			   <tr><td><a href='../proc/deletetestrealarrval.html'>deleteTestRealArrVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td></td></tr>
+			   <tr><td><a href='../proc/deletetestrealarrval.html'>deleteTestRealArrVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td><p>Destruct TestRealVal object by deallocating its next object pointer
+ as well as its res and tgt arrays.</p></td></tr>
 			 
-			   <tr><td><a href='../proc/deletetestrealval.html'>deleteTestRealVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td></td></tr>
+			   <tr><td><a href='../proc/deletetestrealval.html'>deleteTestRealVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td><p>Destruct TestRealVal object by deallocating its next object pointer.</p></td></tr>
 			 
-			   <tr><td><a href='../proc/deletetestsuite.html'>deleteTestSuite</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td></td></tr>
+			   <tr><td><a href='../proc/deletetestsuite.html'>deleteTestSuite</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td><p>Destruct a test suite by deallocating its test pointer attribute.</p></td></tr>
 			 
-			   <tr><td><a href='../proc/newtestrealarrval_name.html'>newTestRealArrVal_name</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td><p>Return new TestRealArrVal object.</p></td></tr>
+			   <tr><td><a href='../proc/newtestrealarrval_name.html'>newTestRealArrVal_name</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td><p>Construct new TestRealArrVal given a name.</p></td></tr>
 			 
-			   <tr><td><a href='../proc/newtestrealval_name.html'>newTestRealVal_name</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td><p>Return new TestRealVal object.</p></td></tr>
+			   <tr><td><a href='../proc/newtestrealval_name.html'>newTestRealVal_name</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td><p>Construct new TestRealVal given a name.</p></td></tr>
 			 
-			   <tr><td><a href='../proc/newtestsuite.html'>newTestSuite</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td><p>Return the new test suite.</p></td></tr>
+			   <tr><td><a href='../proc/newtestsuite.html'>newTestSuite</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td><p>Construct a new test suite.</p></td></tr>
 			 
-			   <tr><td><a href='../proc/printfailtestrealarrval.html'>printFailTestRealArrVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td><p>(Correct) target result array of some procedure.</p></td></tr>
+			   <tr><td><a href='../proc/printfailtestrealarrval.html'>printFailTestRealArrVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td><p>Print failure message of a real array comparrison.</p></td></tr>
 			 
-			   <tr><td><a href='../proc/printfailtestrealval.html'>printFailTestRealVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td><p>(Correct) target result value of some procedure.</p></td></tr>
+			   <tr><td><a href='../proc/printfailtestrealval.html'>printFailTestRealVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td><p>Print failure message of a real value comparrison.</p></td></tr>
 			 
-			   <tr><td><a href='../interface/realarrcompinterface.html'>realArrCompInterface</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Interface</td><td><p>Return whether or not the test succeeded based on a comparrison.</p></td></tr>
+			   <tr><td><a href='../interface/realarrcompinterface.html'>realArrCompInterface</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Interface</td><td></td></tr>
 			 
-			   <tr><td><a href='../proc/realarreq.html'>realArrEq</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td></td></tr>
+			   <tr><td><a href='../proc/realarreq.html'>realArrEq</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td><p>Test if two real arrays are <em>exactly</em> equal. Arrays must be of the
+ same length and have the same values in the same positions. Uses
+ epsilon value to account for floating point error.</p></td></tr>
 			 
-			   <tr><td><a href='../interface/realcompinterface.html'>realCompInterface</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Interface</td><td><p>Return whether or not the test succeeded based on a comparrison.</p></td></tr>
+			   <tr><td><a href='../interface/realcompinterface.html'>realCompInterface</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Interface</td><td></td></tr>
 			 
-			   <tr><td><a href='../proc/realeq.html'>realEq</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td><p>Return whether both values are equal.</p></td></tr>
+			   <tr><td><a href='../proc/realeq.html'>realEq</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td><p>Test if two real values are equal. Uses an epsilon value to account
+ for floating point error.</p></td></tr>
 			 
-			   <tr><td><a href='../proc/runtestrealarrval.html'>runTestRealArrVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td></td></tr>
+			   <tr><td><a href='../proc/runtestrealarrval.html'>runTestRealArrVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td><p>Run test on real arrays and print summary report for images.</p></td></tr>
 			 
-			   <tr><td><a href='../proc/runtestrealval.html'>runTestRealVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td></td></tr>
+			   <tr><td><a href='../proc/runtestrealval.html'>runTestRealVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Function</td><td><p>Run test on real values and print summary report for images.</p></td></tr>
 			 
-			   <tr><td><a href='../proc/runtests.html'>runTests</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td></td></tr>
+			   <tr><td><a href='../proc/runtests.html'>runTests</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Subroutine</td><td><p>Run all tests contained in a test suite.</p></td></tr>
 			 
-			   <tr><td><a href='../interface/testrealarrval.html'>TestRealArrVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Interface</td><td></td></tr>
+			   <tr><td><a href='../interface/testrealarrval.html'>TestRealArrVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Interface</td><td><p>Constructor interface for a TestRealArrVal object.</p></td></tr>
 			 
-			   <tr><td><a href='../interface/testrealval.html'>TestRealVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Interface</td><td></td></tr>
+			   <tr><td><a href='../interface/testrealval.html'>TestRealVal</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Interface</td><td><p>Constructor interface for a TestRealVal object.</p></td></tr>
 			 
-			   <tr><td><a href='../interface/testsuite.html'>TestSuite</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Interface</td><td></td></tr>
+			   <tr><td><a href='../interface/testsuite.html'>TestSuite</a></td><td><a href='../module/cafut.html'>cafut</a></td><td>Interface</td><td><p>Constructor interface for a TestSuite object.</p></td></tr>
 			 
 			 </tbody></table>
              
@@ -173,7 +177,7 @@ All Procedures &ndash; cafut
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/cmacmackin/ford">FORD</a>
-             on 2021-05-22 17:40  
+             on 2021-05-22 19:46  
           </p>
         </div>
         <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> cafut was developed by Renato Zimmermann</p></div>

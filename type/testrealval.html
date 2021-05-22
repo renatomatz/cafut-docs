@@ -257,7 +257,7 @@
     
     <div class="col-md-9" id='text'>
       <h2>type, public, extends(Test) :: TestRealVal</h2>
-    <p>Target real value result for some process.</p>
+    <p>Test performed on single real values.</p>
     
     
     
@@ -377,7 +377,7 @@
   
   <td>public,</td>
   <td>nopass, pointer</td><td>::</td>
-  <td><strong>compare</strong></td><td></td><td></td><td><p>Test performed on single real values.</p></td>
+  <td><strong>compare</strong></td><td></td><td></td><td><p>Pointer to a comparisson function used to perform the test.</p></td>
   
 </tr>
 
@@ -391,7 +391,7 @@
   
   <td>public</td>
   <td></td><td>::</td>
-  <td><strong>res</strong></td><td></td><td></td><td><p>Pointer to a comparisson function used to perform the test.</p></td>
+  <td><strong>res</strong></td><td></td><td></td><td><p>Real value result from some process.</p></td>
   
 </tr>
 
@@ -405,7 +405,7 @@
   
   <td>public</td>
   <td></td><td>::</td>
-  <td><strong>test_name</strong></td><td></td><td></td><td><p>Abstract class for a single test case. A node in the test linked list.</p></td>
+  <td><strong>test_name</strong></td><td></td><td></td><td><p>Name of the test case.</p></td>
   
 </tr>
 
@@ -419,7 +419,7 @@
   
   <td>public</td>
   <td></td><td>::</td>
-  <td><strong>tgt</strong></td><td></td><td></td><td><p>Real value result from some process.</p></td>
+  <td><strong>tgt</strong></td><td></td><td></td><td><p>Target real value result for some process.</p></td>
   
 </tr>
 
@@ -439,6 +439,11 @@
   <div class="panel-heading codesum"><span class="anchor" id="interface-testrealval"></span><h3>public interface <a href='../interface/testrealval.html'>TestRealVal</a>
     
   </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Constructor interface for a TestRealVal object.</p>
+  </div>
   
   <ul class="list-group">
   
@@ -461,7 +466,7 @@ public function <a href='../proc/newtestrealval_name.html'>newTestRealVal_name</
 
 
 
-<p>Return new TestRealVal object.</p>
+<p>Construct new TestRealVal given a name.</p>
     
     <h4>Arguments</h4>
     
@@ -487,7 +492,7 @@ public function <a href='../proc/newtestrealval_name.html'>newTestRealVal_name</
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>ts_name</strong></td><td><p>Construct new TestRealVal given a name.</p></td>
+  <td><strong>ts_name</strong></td><td><p>Name of the new TestRealVal object.</p></td>
   
 </tr>
 
@@ -504,7 +509,7 @@ public function <a href='../proc/newtestrealval_name.html'>newTestRealVal_name</
   
      <h4>Return Value <small>type(<a href='../type/testrealval.html'>TestRealVal</a>)
   </small></h4>
-  <p>Name of the new TestRealVal object.</p>
+  <p>Return new TestRealVal object.</p>
     
 
     </li>
@@ -543,6 +548,14 @@ public subroutine <a href='../proc/deletetestrealval.html'>deleteTestRealVal</a>
    
 </h3>
     
+
+
+
+
+
+
+
+<p>Destruct TestRealVal object by deallocating its next object pointer.</p>
     
     <h4>Arguments</h4>
     
@@ -568,7 +581,7 @@ public subroutine <a href='../proc/deletetestrealval.html'>deleteTestRealVal</a>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>self</strong></td><td><p>Destruct TestRealVal object by deallocating its next object pointer.</p></td>
+  <td><strong>self</strong></td><td></td>
   
 </tr>
 
@@ -619,7 +632,7 @@ public subroutine <a href='../proc/printfailtestrealval.html'>printFailTestRealV
 
 
 
-<p>(Correct) target result value of some procedure.</p>
+<p>Print failure message of a real value comparrison.</p>
     
     <h4>Arguments</h4>
     
@@ -645,7 +658,7 @@ public subroutine <a href='../proc/printfailtestrealval.html'>printFailTestRealV
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>img</strong></td><td><p>Print failure message of a real value comparrison.</p></td>
+  <td><strong>img</strong></td><td><p>Image where the failure occured.</p></td>
   
 </tr>
 
@@ -660,7 +673,7 @@ public subroutine <a href='../proc/printfailtestrealval.html'>printFailTestRealV
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>res</strong></td><td><p>Image where the failure occured.</p></td>
+  <td><strong>res</strong></td><td><p>(Incorrect) result value of some procedure.</p></td>
   
 </tr>
 
@@ -675,7 +688,7 @@ public subroutine <a href='../proc/printfailtestrealval.html'>printFailTestRealV
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>tgt</strong></td><td><p>(Incorrect) result value of some procedure.</p></td>
+  <td><strong>tgt</strong></td><td><p>(Correct) target result value of some procedure.</p></td>
   
 </tr>
 
@@ -714,6 +727,14 @@ public function <a href='../proc/runtestrealval.html'>runTestRealVal</a>(self) r
    
 </h3>
     
+
+
+
+
+
+
+
+<p>Run test on real values and print summary report for images.</p>
     
     <h4>Arguments</h4>
     
@@ -739,7 +760,7 @@ public function <a href='../proc/runtestrealval.html'>runTestRealVal</a>(self) r
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>self</strong></td><td><p>Run test on real values and print summary report for images.</p></td>
+  <td><strong>self</strong></td><td></td>
   
 </tr>
 
@@ -756,7 +777,8 @@ public function <a href='../proc/runtestrealval.html'>runTestRealVal</a>(self) r
   
      <h4>Return Value <small>integer
   </small></h4>
-  
+  <p>Return the tests that passed up to and including this one in
+ the linked list.</p>
     
 
         
@@ -774,14 +796,14 @@ public function <a href='../proc/runtestrealval.html'>runTestRealVal</a>(self) r
     <section>
     <h3><span class="anchor" id="src"></span>Source Code</h3>
     <div class="highlight"><pre><span></span><span class="k">type</span><span class="p">,</span> <span class="k">public</span><span class="p">,</span> <span class="k">extends</span><span class="p">(</span><span class="n">Test</span><span class="p">)</span> <span class="kd">::</span> <span class="n">TestRealVal</span>
-    <span class="c">!&gt; Test performed on single real values.</span>
+    <span class="c">!! Test performed on single real values.</span>
 
     <span class="k">procedure</span><span class="p">(</span><span class="n">realCompInterface</span><span class="p">),</span> <span class="k">public</span><span class="p">,</span> <span class="k">nopass</span><span class="p">,</span> <span class="k">pointer</span> <span class="kd">::</span> <span class="n">compare</span>
-        <span class="c">!&gt; Pointer to a comparisson function used to perform the test.</span>
+        <span class="c">!! Pointer to a comparisson function used to perform the test.</span>
     <span class="kt">real</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">wp</span><span class="p">),</span> <span class="k">public</span> <span class="kd">::</span> <span class="n">res</span>
-        <span class="c">!&gt; Real value result from some process.</span>
+        <span class="c">!! Real value result from some process.</span>
     <span class="kt">real</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">wp</span><span class="p">),</span> <span class="k">public</span> <span class="kd">::</span> <span class="n">tgt</span>
-        <span class="c">!&gt; Target real value result for some process.</span>
+        <span class="c">!! Target real value result for some process.</span>
 <span class="k">contains</span>
 <span class="k">    procedure</span><span class="p">,</span> <span class="k">pass</span> <span class="kd">::</span> <span class="n">run</span> <span class="o">=&gt;</span> <span class="n">runTestRealVal</span>
     <span class="k">procedure</span><span class="p">,</span> <span class="k">nopass</span> <span class="kd">::</span> <span class="n">printFail</span> <span class="o">=&gt;</span> <span class="n">printFailTestRealVal</span>
@@ -807,7 +829,7 @@ public function <a href='../proc/runtestrealval.html'>runTestRealVal</a>(self) r
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/cmacmackin/ford">FORD</a>
-             on 2021-05-22 17:40  
+             on 2021-05-22 19:46  
           </p>
         </div>
         <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> cafut was developed by Renato Zimmermann</p></div>

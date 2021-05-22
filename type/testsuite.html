@@ -251,7 +251,9 @@
     
     <div class="col-md-9" id='text'>
       <h2>type, public :: TestSuite</h2>
-    <p>Current test whose attributes are available to be set.</p>
+    <p>Holds tests and manages their executtion.
+ Represents a set of procedures to test a certain feature.
+ First node of the test linked list.</p>
     
     
     
@@ -365,7 +367,7 @@
   
   <td>public,</td>
   <td>pointer</td><td>::</td>
-  <td><strong>test</strong></td><td></td><td></td><td><p>Name of the test suite.</p></td>
+  <td><strong>test</strong></td><td></td><td></td><td><p>Current test whose attributes are available to be set.</p></td>
   
 </tr>
 
@@ -385,6 +387,11 @@
   <div class="panel-heading codesum"><span class="anchor" id="interface-testsuite"></span><h3>public interface <a href='../interface/testsuite.html'>TestSuite</a>
     
   </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Constructor interface for a TestSuite object.</p>
+  </div>
   
   <ul class="list-group">
   
@@ -407,7 +414,7 @@ public function <a href='../proc/newtestsuite.html'>newTestSuite</a>(ts_name) re
 
 
 
-<p>Return the new test suite.</p>
+<p>Construct a new test suite.</p>
     
     <h4>Arguments</h4>
     
@@ -433,7 +440,7 @@ public function <a href='../proc/newtestsuite.html'>newTestSuite</a>(ts_name) re
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>ts_name</strong></td><td><p>Construct a new test suite.</p></td>
+  <td><strong>ts_name</strong></td><td><p>Name of the test suite.</p></td>
   
 </tr>
 
@@ -450,7 +457,7 @@ public function <a href='../proc/newtestsuite.html'>newTestSuite</a>(ts_name) re
   
      <h4>Return Value <small>type(<a href='../type/testsuite.html'>TestSuite</a>)
   </small></h4>
-  <p>Name of the test suite.</p>
+  <p>Return the new test suite.</p>
     
 
     </li>
@@ -489,6 +496,14 @@ public subroutine <a href='../proc/deletetestsuite.html'>deleteTestSuite</a>(sel
    
 </h3>
     
+
+
+
+
+
+
+
+<p>Destruct a test suite by deallocating its test pointer attribute.</p>
     
     <h4>Arguments</h4>
     
@@ -514,7 +529,7 @@ public subroutine <a href='../proc/deletetestsuite.html'>deleteTestSuite</a>(sel
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>self</strong></td><td><p>Destruct a test suite by deallocating its test pointer attribute.</p></td>
+  <td><strong>self</strong></td><td></td>
   
 </tr>
 
@@ -558,6 +573,14 @@ public subroutine <a href='../proc/addunittest.html'>addUnitTest</a>(self, ut)
    
 </h3>
     
+
+
+
+
+
+
+
+<p>Add a Test object to the test suite and make it available for setup.</p>
     
     <h4>Arguments</h4>
     
@@ -583,7 +606,7 @@ public subroutine <a href='../proc/addunittest.html'>addUnitTest</a>(self, ut)
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>self</strong></td><td><p>Add a Test object to the test suite and make it available for setup.</p></td>
+  <td><strong>self</strong></td><td></td>
   
 </tr>
 
@@ -598,7 +621,7 @@ public subroutine <a href='../proc/addunittest.html'>addUnitTest</a>(self, ut)
   <td></td>
   
   <td>target</td><td>::</td>
-  <td><strong>ut</strong></td><td></td>
+  <td><strong>ut</strong></td><td><p>Object derived from the Test abstract type.</p></td>
   
 </tr>
 
@@ -637,6 +660,14 @@ public subroutine <a href='../proc/runtests.html'>runTests</a>(self)
    
 </h3>
     
+
+
+
+
+
+
+
+<p>Run all tests contained in a test suite.</p>
     
     <h4>Arguments</h4>
     
@@ -662,7 +693,7 @@ public subroutine <a href='../proc/runtests.html'>runTests</a>(self)
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>self</strong></td><td><p>Run all tests contained in a test suite.</p></td>
+  <td><strong>self</strong></td><td></td>
   
 </tr>
 
@@ -688,16 +719,16 @@ public subroutine <a href='../proc/runtests.html'>runTests</a>(self)
     <section>
     <h3><span class="anchor" id="src"></span>Source Code</h3>
     <div class="highlight"><pre><span></span><span class="k">type</span><span class="p">,</span> <span class="k">public</span> <span class="kd">::</span> <span class="n">TestSuite</span>
-    <span class="c">!&gt; Holds tests and manages their executtion.</span>
-    <span class="c">!&gt; Represents a set of procedures to test a certain feature.</span>
-    <span class="c">!&gt; First node of the test linked list.</span>
+    <span class="c">!! Holds tests and manages their executtion.</span>
+    <span class="c">!! Represents a set of procedures to test a certain feature.</span>
+    <span class="c">!! First node of the test linked list.</span>
 
     <span class="kt">integer</span><span class="p">,</span> <span class="k">private</span> <span class="kd">::</span> <span class="n">n_tests</span>
-        <span class="c">!&gt; Number of tests in a test suite.</span>
+        <span class="c">!! Number of tests in a test suite.</span>
     <span class="kt">character</span><span class="p">(</span><span class="nb">len</span><span class="o">=</span><span class="n">NAME_LENGTH</span><span class="p">),</span> <span class="k">private</span> <span class="kd">::</span> <span class="n">test_suite_name</span>
-        <span class="c">!&gt; Name of the test suite.</span>
+        <span class="c">!! Name of the test suite.</span>
     <span class="k">class</span><span class="p">(</span><span class="n">Test</span><span class="p">),</span> <span class="k">public</span><span class="p">,</span> <span class="k">pointer</span> <span class="kd">::</span> <span class="n">test</span>
-        <span class="c">!&gt; Current test whose attributes are available to be set.</span>
+        <span class="c">!! Current test whose attributes are available to be set.</span>
 
 <span class="k">contains</span>
 
@@ -726,7 +757,7 @@ public subroutine <a href='../proc/runtests.html'>runTests</a>(self)
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/cmacmackin/ford">FORD</a>
-             on 2021-05-22 17:40  
+             on 2021-05-22 19:46  
           </p>
         </div>
         <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> cafut was developed by Renato Zimmermann</p></div>
