@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
-    <meta name="description" content="Documentation for Fortran Program">
-   
-    <meta name="author" content="" >
+   <meta name="description" content="Unit Testing for Coarray Fortran">
+    
+    <meta name="author" content="Renato Zimmermann" >
     <link rel="icon" href="../favicon.png">
 
-    <title>TestRealArrVal &ndash; Fortran Program </title>
+    <title>TestRealArrVal &ndash; renatomatz/cafut </title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -44,7 +44,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">Fortran Program </a>
+          <a class="navbar-brand" href="../index.html">renatomatz/cafut </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -175,13 +175,13 @@
   <div id="vars-0" class="panel-collapse collapse">
     <div class="list-group">
       
+      <a class="list-group-item" href="../type/testrealarrval.html#variable-compare">compare</a>
+      
+      <a class="list-group-item" href="../type/testrealarrval.html#variable-res">res</a>
+      
       <a class="list-group-item" href="../type/testrealarrval.html#variable-test_name">test_name</a>
       
-      <a class="list-group-item" href="../type/testrealarrval.html#variable-compare~2">compare</a>
-      
-      <a class="list-group-item" href="../type/testrealarrval.html#variable-res~2">res</a>
-      
-      <a class="list-group-item" href="../type/testrealarrval.html#variable-tgt~2">tgt</a>
+      <a class="list-group-item" href="../type/testrealarrval.html#variable-tgt">tgt</a>
       
     </div>
   </div>
@@ -231,15 +231,23 @@
   <div id="boundprocs-0" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../type/testrealarrval.html#boundprocedure-run~2">run</a>
+      <a class="list-group-item" href="../type/testrealarrval.html#boundprocedure-printfail">printFail</a>
       
-      <a class="list-group-item" href="../type/testrealarrval.html#boundprocedure-printfail~2">printFail</a>
+      <a class="list-group-item" href="../type/testrealarrval.html#boundprocedure-run">run</a>
       
     </div>
   </div>
 </div>
 
 
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../type/testrealarrval.html#src">TestRealArrVal</a>
+  </div>
+</div>
 
 
 
@@ -267,13 +275,13 @@
   <div id="vars-1" class="panel-collapse collapse">
     <div class="list-group">
       
+      <a class="list-group-item" href="../type/testrealarrval.html#variable-compare">compare</a>
+      
+      <a class="list-group-item" href="../type/testrealarrval.html#variable-res">res</a>
+      
       <a class="list-group-item" href="../type/testrealarrval.html#variable-test_name">test_name</a>
       
-      <a class="list-group-item" href="../type/testrealarrval.html#variable-compare~2">compare</a>
-      
-      <a class="list-group-item" href="../type/testrealarrval.html#variable-res~2">res</a>
-      
-      <a class="list-group-item" href="../type/testrealarrval.html#variable-tgt~2">tgt</a>
+      <a class="list-group-item" href="../type/testrealarrval.html#variable-tgt">tgt</a>
       
     </div>
   </div>
@@ -323,15 +331,23 @@
   <div id="boundprocs-1" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../type/testrealarrval.html#boundprocedure-run~2">run</a>
+      <a class="list-group-item" href="../type/testrealarrval.html#boundprocedure-printfail">printFail</a>
       
-      <a class="list-group-item" href="../type/testrealarrval.html#boundprocedure-printfail~2">printFail</a>
+      <a class="list-group-item" href="../type/testrealarrval.html#boundprocedure-run">run</a>
       
     </div>
   </div>
 </div>
 
 
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../type/testrealarrval.html#src">TestRealArrVal</a>
+  </div>
+</div>
 
 
 
@@ -357,6 +373,34 @@
   
 <tr>
   
+  <td><span class="anchor" id="variable-compare"></span>procedure(<a href='../interface/realarrcompinterface.html'>realArrCompInterface</a>),</td>
+  
+  <td>public,</td>
+  <td>nopass, pointer</td><td>::</td>
+  <td><strong>compare</strong></td><td></td><td></td><td><p>Test performed on an array of real values.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-res"></span>real(kind=wp),</td>
+  
+  <td>public,</td>
+  <td>allocatable, dimension(:)</td><td>::</td>
+  <td><strong>res</strong></td><td></td><td></td><td><p>Pointer to a comparisson function used to perform the test.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
   <td><span class="anchor" id="variable-test_name"></span>character(len=NAME_LENGTH),</td>
   
   <td>public</td>
@@ -371,35 +415,7 @@
   
 <tr>
   
-  <td><span class="anchor" id="variable-compare~2"></span>procedure(<a href='../interface/realarrcompinterface.html'>realArrCompInterface</a>),</td>
-  
-  <td>public,</td>
-  <td>nopass, pointer</td><td>::</td>
-  <td><strong>compare</strong></td><td></td><td></td><td><p>Test performed on an array of real values.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-res~2"></span>real(kind=wp),</td>
-  
-  <td>public,</td>
-  <td>allocatable, dimension(:)</td><td>::</td>
-  <td><strong>res</strong></td><td></td><td></td><td><p>Pointer to a comparisson function used to perform the test.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-tgt~2"></span>real(kind=wp),</td>
+  <td><span class="anchor" id="variable-tgt"></span>real(kind=wp),</td>
   
   <td>public,</td>
   <td>allocatable, dimension(:)</td><td>::</td>
@@ -579,80 +595,7 @@ public subroutine <a href='../proc/deletetestrealarrval.html'>deleteTestRealArrV
     
      
 <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-run~2"></span><h3>procedure, public, pass :: <strong>run</strong>  => <a href='../proc/runtestrealarrval.html'>runTestRealArrVal</a> 
-    
-  </h3></div>
-  
-  <ul class="list-group">
-    
-      <li class="list-group-item">
-      
-        
-          
-    
-    <h3>
-public function <a href='../proc/runtestrealarrval.html'>runTestRealArrVal</a>(self) result(tests_passed)
-    
-    
-   
-</h3>
-    
-    
-    <h4>Arguments</h4>
-    
-      
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>class(<a href='../type/testrealarrval.html'>TestRealArrVal</a>),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
-  <td><strong>self</strong></td><td><p>Run test on real arrays and print summary report for images.</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-      
-    
-    
-
-  
-  
-  
-  
-     <h4>Return Value <small>integer
-  </small></h4>
-  
-    
-
-        
-      
-      </li>
-    
-  </ul>
-</div>
-
-    
-     
-<div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-printfail~2"></span><h3>procedure, public, nopass :: <strong>printFail</strong>  => <a href='../proc/printfailtestrealarrval.html'>printFailTestRealArrVal</a> 
+  <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-printfail"></span><h3>procedure, public, nopass :: <strong>printFail</strong>  => <a href='../proc/printfailtestrealarrval.html'>printFailTestRealArrVal</a> 
     
   </h3></div>
   
@@ -752,9 +695,103 @@ public subroutine <a href='../proc/printfailtestrealarrval.html'>printFailTestRe
 </div>
 
     
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-run"></span><h3>procedure, public, pass :: <strong>run</strong>  => <a href='../proc/runtestrealarrval.html'>runTestRealArrVal</a> 
+    
+  </h3></div>
+  
+  <ul class="list-group">
+    
+      <li class="list-group-item">
+      
+        
+          
+    
+    <h3>
+public function <a href='../proc/runtestrealarrval.html'>runTestRealArrVal</a>(self) result(tests_passed)
+    
+    
+   
+</h3>
+    
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/testrealarrval.html'>TestRealArrVal</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>self</strong></td><td><p>Run test on real arrays and print summary report for images.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>integer
+  </small></h4>
+  
+    
+
+        
+      
+      </li>
+    
+  </ul>
+</div>
+
+    
     </section>
     
     
+    
+    <section>
+    <h3><span class="anchor" id="src"></span>Source Code</h3>
+    <div class="highlight"><pre><span></span><span class="k">type</span><span class="p">,</span> <span class="k">public</span><span class="p">,</span> <span class="k">extends</span><span class="p">(</span><span class="n">Test</span><span class="p">)</span> <span class="kd">::</span> <span class="n">TestRealArrVal</span>
+        <span class="c">!&gt; Test performed on an array of real values.</span>
+
+    <span class="k">procedure</span><span class="p">(</span><span class="n">realArrCompInterface</span><span class="p">),</span> <span class="k">nopass</span><span class="p">,</span> <span class="k">pointer</span> <span class="kd">::</span> <span class="n">compare</span>
+        <span class="c">!&gt; Pointer to a comparisson function used to perform the test.</span>
+
+    <span class="kt">real</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">wp</span><span class="p">),</span> <span class="k">allocatable</span><span class="p">,</span> <span class="k">dimension</span><span class="p">(:)</span> <span class="kd">::</span> <span class="n">res</span>
+        <span class="c">!&gt; Real array result from some process.</span>
+    <span class="kt">real</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">wp</span><span class="p">),</span> <span class="k">allocatable</span><span class="p">,</span> <span class="k">dimension</span><span class="p">(:)</span> <span class="kd">::</span> <span class="n">tgt</span>
+        <span class="c">!&gt; Target real array result for some process.</span>
+<span class="k">contains</span>
+<span class="k">    procedure</span><span class="p">,</span> <span class="k">pass</span> <span class="kd">::</span> <span class="n">run</span> <span class="o">=&gt;</span> <span class="n">runTestRealArrVal</span>
+    <span class="k">procedure</span><span class="p">,</span> <span class="k">nopass</span> <span class="kd">::</span> <span class="n">printFail</span> <span class="o">=&gt;</span> <span class="n">printFailTestRealArrVal</span>
+    <span class="k">final</span> <span class="kd">::</span> <span class="n">deleteTestRealArrVal</span>
+<span class="k">end type </span><span class="n">TestRealArrVal</span>
+</pre></div>
+
+    </section>
     
     
     </div>
@@ -772,10 +809,10 @@ public subroutine <a href='../proc/printfailtestrealarrval.html'>printFailTestRe
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/cmacmackin/ford">FORD</a>
-            
+             on 2021-05-22 17:22  
           </p>
         </div>
-        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> Fortran Program was developed by </p></div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> renatomatz/cafut was developed by Renato Zimmermann</p></div>
       </div>
       <br>
       </div> <!-- /container -->    

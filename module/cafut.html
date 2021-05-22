@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
-    <meta name="description" content="Documentation for Fortran Program">
-   
-    <meta name="author" content="" >
+   <meta name="description" content="Unit Testing for Coarray Fortran">
+    
+    <meta name="author" content="Renato Zimmermann" >
     <link rel="icon" href="../favicon.png">
 
-    <title>cafut &ndash; Fortran Program</title>
+    <title>cafut &ndash; renatomatz/cafut</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -44,7 +44,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">Fortran Program </a>
+          <a class="navbar-brand" href="../index.html">renatomatz/cafut </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -173,27 +173,27 @@
   <div id="vars-0" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../module/cafut.html#variable-wp">wp</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-name_length">NAME_LENGTH</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-eps">eps</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-test_start">TEST_START</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-test_end">TEST_END</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-subtest_start">SUBTEST_START</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-subtest_end">SUBTEST_END</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-single_val_fmt">SINGLE_VAL_FMT</a>
+      <a class="list-group-item" href="../module/cafut.html#variable-arr_val_exp">ARR_VAL_EXP</a>
       
       <a class="list-group-item" href="../module/cafut.html#variable-arr_val_img">ARR_VAL_IMG</a>
       
       <a class="list-group-item" href="../module/cafut.html#variable-arr_val_res">ARR_VAL_RES</a>
       
-      <a class="list-group-item" href="../module/cafut.html#variable-arr_val_exp">ARR_VAL_EXP</a>
+      <a class="list-group-item" href="../module/cafut.html#variable-name_length">NAME_LENGTH</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-single_val_fmt">SINGLE_VAL_FMT</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-subtest_end">SUBTEST_END</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-subtest_start">SUBTEST_START</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-test_end">TEST_END</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-test_start">TEST_START</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-eps">eps</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-wp">wp</a>
       
     </div>
   </div>
@@ -212,15 +212,15 @@
   <div id="inters-0" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../module/cafut.html#interface-testsuite">TestSuite</a>
+      <a class="list-group-item" href="../module/cafut.html#interface-testrealarrval">TestRealArrVal</a>
       
       <a class="list-group-item" href="../module/cafut.html#interface-testrealval">TestRealVal</a>
       
-      <a class="list-group-item" href="../module/cafut.html#interface-realcompinterface">realCompInterface</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#interface-testrealarrval">TestRealArrVal</a>
+      <a class="list-group-item" href="../module/cafut.html#interface-testsuite">TestSuite</a>
       
       <a class="list-group-item" href="../module/cafut.html#interface-realarrcompinterface">realArrCompInterface</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#interface-realcompinterface">realCompInterface</a>
       
     </div>
   </div>
@@ -246,11 +246,11 @@
   <div id="types-0" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../module/cafut.html#type-testsuite">TestSuite</a>
+      <a class="list-group-item" href="../module/cafut.html#type-testrealarrval">TestRealArrVal</a>
       
       <a class="list-group-item" href="../module/cafut.html#type-testrealval">TestRealVal</a>
       
-      <a class="list-group-item" href="../module/cafut.html#type-testrealarrval">TestRealArrVal</a>
+      <a class="list-group-item" href="../module/cafut.html#type-testsuite">TestSuite</a>
       
     </div>
   </div>
@@ -263,19 +263,19 @@
   <div id="funcs-0" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../module/cafut.html#proc-newtestsuite">newTestSuite</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#proc-realeq">realEq</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#proc-realarreq">realArrEq</a>
+      <a class="list-group-item" href="../module/cafut.html#proc-newtestrealarrval_name">newTestRealArrVal_name</a>
       
       <a class="list-group-item" href="../module/cafut.html#proc-newtestrealval_name">newTestRealVal_name</a>
       
-      <a class="list-group-item" href="../module/cafut.html#proc-newtestrealarrval_name">newTestRealArrVal_name</a>
+      <a class="list-group-item" href="../module/cafut.html#proc-newtestsuite">newTestSuite</a>
       
-      <a class="list-group-item" href="../module/cafut.html#proc-runtestrealval">runTestRealVal</a>
+      <a class="list-group-item" href="../module/cafut.html#proc-realarreq">realArrEq</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#proc-realeq">realEq</a>
       
       <a class="list-group-item" href="../module/cafut.html#proc-runtestrealarrval">runTestRealArrVal</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#proc-runtestrealval">runTestRealVal</a>
       
     </div>
   </div>
@@ -288,19 +288,19 @@
   <div class="list-group">
     <div id="subs-0" class="panel-collapse collapse">
       
-      <a class="list-group-item" href="../module/cafut.html#proc-deletetestsuite">deleteTestSuite</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#proc-runtests">runTests</a>
-      
       <a class="list-group-item" href="../module/cafut.html#proc-addunittest">addUnitTest</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#proc-deletetestrealval">deleteTestRealVal</a>
       
       <a class="list-group-item" href="../module/cafut.html#proc-deletetestrealarrval">deleteTestRealArrVal</a>
       
-      <a class="list-group-item" href="../module/cafut.html#proc-printfailtestrealval">printFailTestRealVal</a>
+      <a class="list-group-item" href="../module/cafut.html#proc-deletetestrealval">deleteTestRealVal</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#proc-deletetestsuite">deleteTestSuite</a>
       
       <a class="list-group-item" href="../module/cafut.html#proc-printfailtestrealarrval">printFailTestRealArrVal</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#proc-printfailtestrealval">printFailTestRealVal</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#proc-runtests">runTests</a>
       
     </div>
   </div>
@@ -366,27 +366,27 @@
   <div id="vars-1" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../module/cafut.html#variable-wp">wp</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-name_length">NAME_LENGTH</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-eps">eps</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-test_start">TEST_START</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-test_end">TEST_END</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-subtest_start">SUBTEST_START</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-subtest_end">SUBTEST_END</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#variable-single_val_fmt">SINGLE_VAL_FMT</a>
+      <a class="list-group-item" href="../module/cafut.html#variable-arr_val_exp">ARR_VAL_EXP</a>
       
       <a class="list-group-item" href="../module/cafut.html#variable-arr_val_img">ARR_VAL_IMG</a>
       
       <a class="list-group-item" href="../module/cafut.html#variable-arr_val_res">ARR_VAL_RES</a>
       
-      <a class="list-group-item" href="../module/cafut.html#variable-arr_val_exp">ARR_VAL_EXP</a>
+      <a class="list-group-item" href="../module/cafut.html#variable-name_length">NAME_LENGTH</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-single_val_fmt">SINGLE_VAL_FMT</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-subtest_end">SUBTEST_END</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-subtest_start">SUBTEST_START</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-test_end">TEST_END</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-test_start">TEST_START</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-eps">eps</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#variable-wp">wp</a>
       
     </div>
   </div>
@@ -405,15 +405,15 @@
   <div id="inters-1" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../module/cafut.html#interface-testsuite">TestSuite</a>
+      <a class="list-group-item" href="../module/cafut.html#interface-testrealarrval">TestRealArrVal</a>
       
       <a class="list-group-item" href="../module/cafut.html#interface-testrealval">TestRealVal</a>
       
-      <a class="list-group-item" href="../module/cafut.html#interface-realcompinterface">realCompInterface</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#interface-testrealarrval">TestRealArrVal</a>
+      <a class="list-group-item" href="../module/cafut.html#interface-testsuite">TestSuite</a>
       
       <a class="list-group-item" href="../module/cafut.html#interface-realarrcompinterface">realArrCompInterface</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#interface-realcompinterface">realCompInterface</a>
       
     </div>
   </div>
@@ -439,11 +439,11 @@
   <div id="types-1" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../module/cafut.html#type-testsuite">TestSuite</a>
+      <a class="list-group-item" href="../module/cafut.html#type-testrealarrval">TestRealArrVal</a>
       
       <a class="list-group-item" href="../module/cafut.html#type-testrealval">TestRealVal</a>
       
-      <a class="list-group-item" href="../module/cafut.html#type-testrealarrval">TestRealArrVal</a>
+      <a class="list-group-item" href="../module/cafut.html#type-testsuite">TestSuite</a>
       
     </div>
   </div>
@@ -456,19 +456,19 @@
   <div id="funcs-1" class="panel-collapse collapse">
     <div class="list-group">
       
-      <a class="list-group-item" href="../module/cafut.html#proc-newtestsuite">newTestSuite</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#proc-realeq">realEq</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#proc-realarreq">realArrEq</a>
+      <a class="list-group-item" href="../module/cafut.html#proc-newtestrealarrval_name">newTestRealArrVal_name</a>
       
       <a class="list-group-item" href="../module/cafut.html#proc-newtestrealval_name">newTestRealVal_name</a>
       
-      <a class="list-group-item" href="../module/cafut.html#proc-newtestrealarrval_name">newTestRealArrVal_name</a>
+      <a class="list-group-item" href="../module/cafut.html#proc-newtestsuite">newTestSuite</a>
       
-      <a class="list-group-item" href="../module/cafut.html#proc-runtestrealval">runTestRealVal</a>
+      <a class="list-group-item" href="../module/cafut.html#proc-realarreq">realArrEq</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#proc-realeq">realEq</a>
       
       <a class="list-group-item" href="../module/cafut.html#proc-runtestrealarrval">runTestRealArrVal</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#proc-runtestrealval">runTestRealVal</a>
       
     </div>
   </div>
@@ -481,19 +481,19 @@
   <div class="list-group">
     <div id="subs-1" class="panel-collapse collapse">
       
-      <a class="list-group-item" href="../module/cafut.html#proc-deletetestsuite">deleteTestSuite</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#proc-runtests">runTests</a>
-      
       <a class="list-group-item" href="../module/cafut.html#proc-addunittest">addUnitTest</a>
-      
-      <a class="list-group-item" href="../module/cafut.html#proc-deletetestrealval">deleteTestRealVal</a>
       
       <a class="list-group-item" href="../module/cafut.html#proc-deletetestrealarrval">deleteTestRealArrVal</a>
       
-      <a class="list-group-item" href="../module/cafut.html#proc-printfailtestrealval">printFailTestRealVal</a>
+      <a class="list-group-item" href="../module/cafut.html#proc-deletetestrealval">deleteTestRealVal</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#proc-deletetestsuite">deleteTestSuite</a>
       
       <a class="list-group-item" href="../module/cafut.html#proc-printfailtestrealarrval">printFailTestRealArrVal</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#proc-printfailtestrealval">printFailTestRealVal</a>
+      
+      <a class="list-group-item" href="../module/cafut.html#proc-runtests">runTests</a>
       
     </div>
   </div>
@@ -532,109 +532,11 @@
   
 <tr>
   
-  <td><span class="anchor" id="variable-wp"></span>integer,</td>
+  <td><span class="anchor" id="variable-arr_val_exp"></span>character(len=*),</td>
   
   <td>public,</td>
   <td>parameter</td><td>::</td>
-  <td><strong>wp</strong></td><td> =</td><td>real64</td><td></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-name_length"></span>integer,</td>
-  
-  <td>public,</td>
-  <td>parameter</td><td>::</td>
-  <td><strong>NAME_LENGTH</strong></td><td> =</td><td>20</td><td><p>Define real number kind.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-eps"></span>real(kind=real64),</td>
-  
-  <td>public,</td>
-  <td>parameter</td><td>::</td>
-  <td><strong>eps</strong></td><td> =</td><td>1.0d-5</td><td><p>Define maximum name length.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-test_start"></span>character(len=*),</td>
-  
-  <td>public,</td>
-  <td>parameter</td><td>::</td>
-  <td><strong>TEST_START</strong></td><td> =</td><td>'("==================== ", A, " ====================")'</td><td><p>Define margin of floating point error for real value comparissons.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-test_end"></span>character(len=*),</td>
-  
-  <td>public,</td>
-  <td>parameter</td><td>::</td>
-  <td><strong>TEST_END</strong></td><td> =</td><td>'(A, " FINISHED WITH ", I3, "/", I3, " TESTS PASSED")'</td><td><p>Format of the start of a unit test.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-subtest_start"></span>character(len=*),</td>
-  
-  <td>public,</td>
-  <td>parameter</td><td>::</td>
-  <td><strong>SUBTEST_START</strong></td><td> =</td><td>'("> ", A20)'</td><td><p>Format of the end of a unit test.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-subtest_end"></span>character(len=*),</td>
-  
-  <td>public,</td>
-  <td>parameter</td><td>::</td>
-  <td><strong>SUBTEST_END</strong></td><td> =</td><td>'("finished with" , I3, "/", I3, " images passed")'</td><td><p>Format of the start of a unit test.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-single_val_fmt"></span>character(len=*),</td>
-  
-  <td>public,</td>
-  <td>parameter</td><td>::</td>
-  <td><strong>SINGLE_VAL_FMT</strong></td><td> =</td><td>'(">> TEST FAILED | Image: ", I3, " | Got: ", F5.2, " | Expected: ", F5.2)'</td><td><p>Format of the end of a unit test.</p></td>
+  <td><strong>ARR_VAL_EXP</strong></td><td> =</td><td>">>> Expected: "</td><td><p>String preceeding result array.</p></td>
   
 </tr>
 
@@ -672,11 +574,109 @@
   
 <tr>
   
-  <td><span class="anchor" id="variable-arr_val_exp"></span>character(len=*),</td>
+  <td><span class="anchor" id="variable-name_length"></span>integer,</td>
   
   <td>public,</td>
   <td>parameter</td><td>::</td>
-  <td><strong>ARR_VAL_EXP</strong></td><td> =</td><td>">>> Expected: "</td><td><p>String preceeding result array.</p></td>
+  <td><strong>NAME_LENGTH</strong></td><td> =</td><td>20</td><td><p>Define real number kind.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-single_val_fmt"></span>character(len=*),</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>SINGLE_VAL_FMT</strong></td><td> =</td><td>'(">> TEST FAILED | Image: ", I3, " | Got: ", F5.2, " | Expected: ", F5.2)'</td><td><p>Format of the end of a unit test.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-subtest_end"></span>character(len=*),</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>SUBTEST_END</strong></td><td> =</td><td>'("finished with" , I3, "/", I3, " images passed")'</td><td><p>Format of the start of a unit test.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-subtest_start"></span>character(len=*),</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>SUBTEST_START</strong></td><td> =</td><td>'("> ", A20)'</td><td><p>Format of the end of a unit test.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-test_end"></span>character(len=*),</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>TEST_END</strong></td><td> =</td><td>'(A, " FINISHED WITH ", I3, "/", I3, " TESTS PASSED")'</td><td><p>Format of the start of a unit test.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-test_start"></span>character(len=*),</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>TEST_START</strong></td><td> =</td><td>'("==================== ", A, " ====================")'</td><td><p>Define margin of floating point error for real value comparissons.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-eps"></span>real(kind=real64),</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>eps</strong></td><td> =</td><td>1.0d-5</td><td><p>Define maximum name length.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-wp"></span>integer,</td>
+  
+  <td>public,</td>
+  <td>parameter</td><td>::</td>
+  <td><strong>wp</strong></td><td> =</td><td>real64</td><td></td>
   
 </tr>
 
@@ -695,7 +695,7 @@
    
      
 <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="interface-testsuite"></span><h3>public interface <a href='../interface/testsuite.html'>TestSuite</a>
+  <div class="panel-heading codesum"><span class="anchor" id="interface-testrealarrval"></span><h3>public interface <a href='../interface/testrealarrval.html'>TestRealArrVal</a>
     
   </h3></div>
   
@@ -707,7 +707,7 @@
     
     
     <h3>
-public function <a href='../proc/newtestsuite.html'>newTestSuite</a>(ts_name) result(new_ts)
+public function <a href='../proc/newtestrealarrval_name.html'>newTestRealArrVal_name</a>(ts_name) result(new_ts)
     
     
    
@@ -720,7 +720,7 @@ public function <a href='../proc/newtestsuite.html'>newTestSuite</a>(ts_name) re
 
 
 
-<p>Return the new test suite.</p>
+<p>Return new TestRealArrVal object.</p>
     
     <h4>Arguments</h4>
     
@@ -746,7 +746,7 @@ public function <a href='../proc/newtestsuite.html'>newTestSuite</a>(ts_name) re
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>ts_name</strong></td><td><p>Construct a new test suite.</p></td>
+  <td><strong>ts_name</strong></td><td><p>Construct new TestRealArrVal given a name.</p></td>
   
 </tr>
 
@@ -761,9 +761,9 @@ public function <a href='../proc/newtestsuite.html'>newTestSuite</a>(ts_name) re
   
   
   
-     <h4>Return Value <small>type(<a href='../type/testsuite.html'>TestSuite</a>)
+     <h4>Return Value <small>type(<a href='../type/testrealarrval.html'>TestRealArrVal</a>)
   </small></h4>
-  <p>Name of the test suite.</p>
+  <p>Name of the new TestRealArrVal object.</p>
     
 
     </li>
@@ -855,100 +855,7 @@ public function <a href='../proc/newtestrealval_name.html'>newTestRealVal_name</
     
      
 <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="interface-realcompinterface"></span><h3>interface 
-    
-  </h3></div>
-  
-  <div class="panel-body">
-    
-    <p>Return whether or not the test succeeded based on a comparrison.</p>
-  </div>
-  
-  <ul class="list-group">
-  
-    <li class="list-group-item">
-    
-    
-    <h3>
-public function realCompInterface(res, tgt) result(comp)
-    
-    
-   
-</h3>
-    
-
-
-
-<p>Abstract function interface for a value comparisson function.</p>
-    
-    <h4>Arguments</h4>
-    
-      
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
-  <td><strong>res</strong></td><td></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>real(kind=wp),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
-  <td><strong>tgt</strong></td><td><p>Result being tested.</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-      
-    
-    
-
-  
-  
-  
-  
-     <h4>Return Value <small>logical
-  </small></h4>
-  <p>Target value used to compare result to.</p>
-    
-
-    </li>
-  
-  </ul>
-</div>
-
-    
-     
-<div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="interface-testrealarrval"></span><h3>public interface <a href='../interface/testrealarrval.html'>TestRealArrVal</a>
+  <div class="panel-heading codesum"><span class="anchor" id="interface-testsuite"></span><h3>public interface <a href='../interface/testsuite.html'>TestSuite</a>
     
   </h3></div>
   
@@ -960,7 +867,7 @@ public function realCompInterface(res, tgt) result(comp)
     
     
     <h3>
-public function <a href='../proc/newtestrealarrval_name.html'>newTestRealArrVal_name</a>(ts_name) result(new_ts)
+public function <a href='../proc/newtestsuite.html'>newTestSuite</a>(ts_name) result(new_ts)
     
     
    
@@ -973,7 +880,7 @@ public function <a href='../proc/newtestrealarrval_name.html'>newTestRealArrVal_
 
 
 
-<p>Return new TestRealArrVal object.</p>
+<p>Return the new test suite.</p>
     
     <h4>Arguments</h4>
     
@@ -999,7 +906,7 @@ public function <a href='../proc/newtestrealarrval_name.html'>newTestRealArrVal_
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>ts_name</strong></td><td><p>Construct new TestRealArrVal given a name.</p></td>
+  <td><strong>ts_name</strong></td><td><p>Construct a new test suite.</p></td>
   
 </tr>
 
@@ -1014,9 +921,9 @@ public function <a href='../proc/newtestrealarrval_name.html'>newTestRealArrVal_
   
   
   
-     <h4>Return Value <small>type(<a href='../type/testrealarrval.html'>TestRealArrVal</a>)
+     <h4>Return Value <small>type(<a href='../type/testsuite.html'>TestSuite</a>)
   </small></h4>
-  <p>Name of the new TestRealArrVal object.</p>
+  <p>Name of the test suite.</p>
     
 
     </li>
@@ -1111,6 +1018,99 @@ public function realArrCompInterface(res, tgt) result(comp)
      <h4>Return Value <small>logical
   </small></h4>
   <p>See res and tgt in TestRealArrVal class.</p>
+    
+
+    </li>
+  
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="interface-realcompinterface"></span><h3>interface 
+    
+  </h3></div>
+  
+  <div class="panel-body">
+    
+    <p>Return whether or not the test succeeded based on a comparrison.</p>
+  </div>
+  
+  <ul class="list-group">
+  
+    <li class="list-group-item">
+    
+    
+    <h3>
+public function realCompInterface(res, tgt) result(comp)
+    
+    
+   
+</h3>
+    
+
+
+
+<p>Abstract function interface for a value comparisson function.</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=wp),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>res</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=wp),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>tgt</strong></td><td><p>Result being tested.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>Target value used to compare result to.</p>
     
 
     </li>
@@ -1217,6 +1217,260 @@ public function runInterface(self) result(tests_passed)
    
      
 <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-testrealarrval"></span><h3>type, public, extends(Test) :: <a href='../type/testrealarrval.html'>TestRealArrVal</a>
+    
+  </h3></div>
+  <div class="panel-body">
+    
+    
+    <p>Target real array result for some process.</p>
+    
+     
+     <h4>Components</h4>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-compare"></span>procedure(<a href='../interface/realarrcompinterface.html'>realArrCompInterface</a>),</td>
+  
+  <td>public,</td>
+  <td>nopass, pointer</td><td>::</td>
+  <td><strong>compare</strong></td><td></td><td></td><td><p>Test performed on an array of real values.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-res"></span>real(kind=wp),</td>
+  
+  <td>public,</td>
+  <td>allocatable, dimension(:)</td><td>::</td>
+  <td><strong>res</strong></td><td></td><td></td><td><p>Pointer to a comparisson function used to perform the test.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-test_name"></span>character(len=NAME_LENGTH),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>test_name</strong></td><td></td><td></td><td><p>Abstract class for a single test case. A node in the test linked list.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-tgt"></span>real(kind=wp),</td>
+  
+  <td>public,</td>
+  <td>allocatable, dimension(:)</td><td>::</td>
+  <td><strong>tgt</strong></td><td></td><td></td><td><p>Real array result from some process.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+     
+     
+     <h4>Constructor</h4>
+       
+         
+       
+       <table class="table table-striped varlist">
+      <tbody>
+        
+             
+             
+             
+             <tr><td>public  function <strong><a href='../proc/newtestrealarrval_name.html'>newTestRealArrVal_name</a></strong>(ts_name)</td><td><p>Return new TestRealArrVal object.</p></td></tr>
+             
+        
+       </tbody>
+       </table>
+     
+     
+     <h4>Finalizations Procedures</h4>
+      <table class="table table-striped varlist">
+      <tbody>
+      
+       <tr><td>final :: <strong>deleteTestRealArrVal</strong></h3></td><td></td></tr>
+      
+       </tbody>
+       </table>  
+          
+     
+     <h4>Type-Bound Procedures</h4>
+      <table class="table table-striped varlist">
+      <tbody>
+      
+       <tr><td>procedure, public, nopass :: <strong><a href='../type/testrealarrval.html#boundprocedure-printfail'>printFail</a></strong>  => printFailTestRealArrVal </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, public, pass :: <strong><a href='../type/testrealarrval.html#boundprocedure-run'>run</a></strong>  => runTestRealArrVal </td>
+       <td></td></tr>
+      
+       </tbody>
+       </table>
+     
+  </div>
+</div>
+
+     
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="type-testrealval"></span><h3>type, public, extends(Test) :: <a href='../type/testrealval.html'>TestRealVal</a>
+    
+  </h3></div>
+  <div class="panel-body">
+    
+    
+    <p>Target real value result for some process.</p>
+    
+     
+     <h4>Components</h4>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-compare~2"></span>procedure(<a href='../interface/realcompinterface.html'>realCompInterface</a>),</td>
+  
+  <td>public,</td>
+  <td>nopass, pointer</td><td>::</td>
+  <td><strong>compare</strong></td><td></td><td></td><td><p>Test performed on single real values.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-res~2"></span>real(kind=wp),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>res</strong></td><td></td><td></td><td><p>Pointer to a comparisson function used to perform the test.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-test_name"></span>character(len=NAME_LENGTH),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>test_name</strong></td><td></td><td></td><td><p>Abstract class for a single test case. A node in the test linked list.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-tgt~2"></span>real(kind=wp),</td>
+  
+  <td>public</td>
+  <td></td><td>::</td>
+  <td><strong>tgt</strong></td><td></td><td></td><td><p>Real value result from some process.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+     
+     
+     <h4>Constructor</h4>
+       
+         
+       
+       <table class="table table-striped varlist">
+      <tbody>
+        
+             
+             
+             
+             <tr><td>public  function <strong><a href='../proc/newtestrealval_name.html'>newTestRealVal_name</a></strong>(ts_name)</td><td><p>Return new TestRealVal object.</p></td></tr>
+             
+        
+       </tbody>
+       </table>
+     
+     
+     <h4>Finalizations Procedures</h4>
+      <table class="table table-striped varlist">
+      <tbody>
+      
+       <tr><td>final :: <strong>deleteTestRealVal</strong></h3></td><td></td></tr>
+      
+       </tbody>
+       </table>  
+          
+     
+     <h4>Type-Bound Procedures</h4>
+      <table class="table table-striped varlist">
+      <tbody>
+      
+       <tr><td>procedure, public, nopass :: <strong><a href='../type/testrealval.html#boundprocedure-printfail~2'>printFail</a></strong>  => printFailTestRealVal </td>
+       <td></td></tr>
+      
+       <tr><td>procedure, public, pass :: <strong><a href='../type/testrealval.html#boundprocedure-run~2'>run</a></strong>  => runTestRealVal </td>
+       <td></td></tr>
+      
+       </tbody>
+       </table>
+     
+  </div>
+</div>
+
+     
+     
+<div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="type-testsuite"></span><h3>type, public :: <a href='../type/testsuite.html'>TestSuite</a>
     
   </h3></div>
@@ -1300,260 +1554,6 @@ public function runInterface(self) result(tests_passed)
 </div>
 
      
-     
-<div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="type-testrealval"></span><h3>type, public, extends(Test) :: <a href='../type/testrealval.html'>TestRealVal</a>
-    
-  </h3></div>
-  <div class="panel-body">
-    
-    
-    <p>Target real value result for some process.</p>
-    
-     
-     <h4>Components</h4>
-    
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th><th>Visibility</th>
-
-<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-test_name"></span>character(len=NAME_LENGTH),</td>
-  
-  <td>public</td>
-  <td></td><td>::</td>
-  <td><strong>test_name</strong></td><td></td><td></td><td><p>Abstract class for a single test case. A node in the test linked list.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-compare"></span>procedure(<a href='../interface/realcompinterface.html'>realCompInterface</a>),</td>
-  
-  <td>public,</td>
-  <td>nopass, pointer</td><td>::</td>
-  <td><strong>compare</strong></td><td></td><td></td><td><p>Test performed on single real values.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-res"></span>real(kind=wp),</td>
-  
-  <td>public</td>
-  <td></td><td>::</td>
-  <td><strong>res</strong></td><td></td><td></td><td><p>Pointer to a comparisson function used to perform the test.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-tgt"></span>real(kind=wp),</td>
-  
-  <td>public</td>
-  <td></td><td>::</td>
-  <td><strong>tgt</strong></td><td></td><td></td><td><p>Real value result from some process.</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-     
-     
-     <h4>Constructor</h4>
-       
-         
-       
-       <table class="table table-striped varlist">
-      <tbody>
-        
-             
-             
-             
-             <tr><td>public  function <strong><a href='../proc/newtestrealval_name.html'>newTestRealVal_name</a></strong>(ts_name)</td><td><p>Return new TestRealVal object.</p></td></tr>
-             
-        
-       </tbody>
-       </table>
-     
-     
-     <h4>Finalizations Procedures</h4>
-      <table class="table table-striped varlist">
-      <tbody>
-      
-       <tr><td>final :: <strong>deleteTestRealVal</strong></h3></td><td></td></tr>
-      
-       </tbody>
-       </table>  
-          
-     
-     <h4>Type-Bound Procedures</h4>
-      <table class="table table-striped varlist">
-      <tbody>
-      
-       <tr><td>procedure, public, pass :: <strong><a href='../type/testrealval.html#boundprocedure-run'>run</a></strong>  => runTestRealVal </td>
-       <td></td></tr>
-      
-       <tr><td>procedure, public, nopass :: <strong><a href='../type/testrealval.html#boundprocedure-printfail'>printFail</a></strong>  => printFailTestRealVal </td>
-       <td></td></tr>
-      
-       </tbody>
-       </table>
-     
-  </div>
-</div>
-
-     
-     
-<div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="type-testrealarrval"></span><h3>type, public, extends(Test) :: <a href='../type/testrealarrval.html'>TestRealArrVal</a>
-    
-  </h3></div>
-  <div class="panel-body">
-    
-    
-    <p>Target real array result for some process.</p>
-    
-     
-     <h4>Components</h4>
-    
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th><th>Visibility</th>
-
-<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-test_name"></span>character(len=NAME_LENGTH),</td>
-  
-  <td>public</td>
-  <td></td><td>::</td>
-  <td><strong>test_name</strong></td><td></td><td></td><td><p>Abstract class for a single test case. A node in the test linked list.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-compare~2"></span>procedure(<a href='../interface/realarrcompinterface.html'>realArrCompInterface</a>),</td>
-  
-  <td>public,</td>
-  <td>nopass, pointer</td><td>::</td>
-  <td><strong>compare</strong></td><td></td><td></td><td><p>Test performed on an array of real values.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-res~2"></span>real(kind=wp),</td>
-  
-  <td>public,</td>
-  <td>allocatable, dimension(:)</td><td>::</td>
-  <td><strong>res</strong></td><td></td><td></td><td><p>Pointer to a comparisson function used to perform the test.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" id="variable-tgt~2"></span>real(kind=wp),</td>
-  
-  <td>public,</td>
-  <td>allocatable, dimension(:)</td><td>::</td>
-  <td><strong>tgt</strong></td><td></td><td></td><td><p>Real array result from some process.</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-     
-     
-     <h4>Constructor</h4>
-       
-         
-       
-       <table class="table table-striped varlist">
-      <tbody>
-        
-             
-             
-             
-             <tr><td>public  function <strong><a href='../proc/newtestrealarrval_name.html'>newTestRealArrVal_name</a></strong>(ts_name)</td><td><p>Return new TestRealArrVal object.</p></td></tr>
-             
-        
-       </tbody>
-       </table>
-     
-     
-     <h4>Finalizations Procedures</h4>
-      <table class="table table-striped varlist">
-      <tbody>
-      
-       <tr><td>final :: <strong>deleteTestRealArrVal</strong></h3></td><td></td></tr>
-      
-       </tbody>
-       </table>  
-          
-     
-     <h4>Type-Bound Procedures</h4>
-      <table class="table table-striped varlist">
-      <tbody>
-      
-       <tr><td>procedure, public, pass :: <strong><a href='../type/testrealarrval.html#boundprocedure-run~2'>run</a></strong>  => runTestRealArrVal </td>
-       <td></td></tr>
-      
-       <tr><td>procedure, public, nopass :: <strong><a href='../type/testrealarrval.html#boundprocedure-printfail~2'>printFail</a></strong>  => printFailTestRealArrVal </td>
-       <td></td></tr>
-      
-       </tbody>
-       </table>
-     
-  </div>
-</div>
-
-     
     </section>
   <br>
     
@@ -1561,6 +1561,142 @@ public function runInterface(self) result(tests_passed)
      
     <section>
     <h2>Functions</h2>
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-newtestrealarrval_name"></span><h3>
+public function <a href='../proc/newtestrealarrval_name.html'>newTestRealArrVal_name</a>(ts_name) result(new_ts)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Return new TestRealArrVal object.</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>ts_name</strong></td><td><p>Construct new TestRealArrVal given a name.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/testrealarrval.html'>TestRealArrVal</a>)
+  </small></h4>
+  <p>Name of the new TestRealArrVal object.</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-newtestrealval_name"></span><h3>
+public function <a href='../proc/newtestrealval_name.html'>newTestRealVal_name</a>(ts_name) result(new_ts)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>Return new TestRealVal object.</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>character(len=*),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>ts_name</strong></td><td><p>Construct new TestRealVal given a name.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>type(<a href='../type/testrealval.html'>TestRealVal</a>)
+  </small></h4>
+  <p>Name of the new TestRealVal object.</p>
+    
+
+  </div>
+  </div>
+
     
     
   <div class="panel panel-default">
@@ -1624,6 +1760,83 @@ public function <a href='../proc/newtestsuite.html'>newTestSuite</a>(ts_name) re
      <h4>Return Value <small>type(<a href='../type/testsuite.html'>TestSuite</a>)
   </small></h4>
   <p>Name of the test suite.</p>
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-realarreq"></span><h3>
+public function <a href='../proc/realarreq.html'>realArrEq</a>(res, tgt) result(comp)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=wp),</td>
+  <td>intent(in),</td>
+  <td></td>
+  
+  <td>dimension(:)</td><td>::</td>
+  <td><strong>res</strong></td><td><p>Test if two real arrays are <em>exactly</em> equal. Arrays must be of the
+ same length and have the same values in the same positions. Uses
+ epsilon value to account for floating point error.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=wp),</td>
+  <td>intent(in),</td>
+  <td></td>
+  
+  <td>dimension(:)</td><td>::</td>
+  <td><strong>tgt</strong></td><td><p>Real value result being tested. </p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  
+  
+  
+  
+     <h4>Return Value <small>logical
+  </small></h4>
+  <p>Target real value to compare result to.</p>
     
 
   </div>
@@ -1716,8 +1929,8 @@ public function <a href='../proc/realeq.html'>realEq</a>(res, tgt) result(comp)
     
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-realarreq"></span><h3>
-public function <a href='../proc/realarreq.html'>realArrEq</a>(res, tgt) result(comp)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-runtestrealarrval"></span><h3>
+public function <a href='../proc/runtestrealarrval.html'>runTestRealArrVal</a>(self) result(tests_passed)
     
     
    
@@ -1745,97 +1958,12 @@ public function <a href='../proc/realarreq.html'>realArrEq</a>(res, tgt) result(
   
 <tr>
   
-  <td><span class="anchor" ></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
-  <td><strong>res</strong></td><td><p>Test if two real arrays are <em>exactly</em> equal. Arrays must be of the
- same length and have the same values in the same positions. Uses
- epsilon value to account for floating point error.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
-  <td><strong>tgt</strong></td><td><p>Real value result being tested. </p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-      
-    
-    
-
-  
-  
-  
-  
-     <h4>Return Value <small>logical
-  </small></h4>
-  <p>Target real value to compare result to.</p>
-    
-
-  </div>
-  </div>
-
-    
-    
-  <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-newtestrealval_name"></span><h3>
-public function <a href='../proc/newtestrealval_name.html'>newTestRealVal_name</a>(ts_name) result(new_ts)
-    
-    
-   
-</h3></div>
-  <div class="panel-body">
-       
-    
-
-
-
-
-
-
-
-<p>Return new TestRealVal object.</p>
-    
-    <h4>Arguments</h4>
-    
-      
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>character(len=*),</td>
+  <td><span class="anchor" ></span>class(<a href='../type/testrealarrval.html'>TestRealArrVal</a>),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>ts_name</strong></td><td><p>Construct new TestRealVal given a name.</p></td>
+  <td><strong>self</strong></td><td><p>Run test on real arrays and print summary report for images.</p></td>
   
 </tr>
 
@@ -1850,77 +1978,9 @@ public function <a href='../proc/newtestrealval_name.html'>newTestRealVal_name</
   
   
   
-     <h4>Return Value <small>type(<a href='../type/testrealval.html'>TestRealVal</a>)
+     <h4>Return Value <small>integer
   </small></h4>
-  <p>Name of the new TestRealVal object.</p>
-    
-
-  </div>
-  </div>
-
-    
-    
-  <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-newtestrealarrval_name"></span><h3>
-public function <a href='../proc/newtestrealarrval_name.html'>newTestRealArrVal_name</a>(ts_name) result(new_ts)
-    
-    
-   
-</h3></div>
-  <div class="panel-body">
-       
-    
-
-
-
-
-
-
-
-<p>Return new TestRealArrVal object.</p>
-    
-    <h4>Arguments</h4>
-    
-      
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
-<tbody>
-
   
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>character(len=*),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
-  <td><strong>ts_name</strong></td><td><p>Construct new TestRealArrVal given a name.</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-      
-    
-    
-
-  
-  
-  
-  
-     <h4>Return Value <small>type(<a href='../type/testrealarrval.html'>TestRealArrVal</a>)
-  </small></h4>
-  <p>Name of the new TestRealArrVal object.</p>
     
 
   </div>
@@ -1987,66 +2047,6 @@ public function <a href='../proc/runtestrealval.html'>runTestRealVal</a>(self) r
   </div>
 
     
-    
-  <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-runtestrealarrval"></span><h3>
-public function <a href='../proc/runtestrealarrval.html'>runTestRealArrVal</a>(self) result(tests_passed)
-    
-    
-   
-</h3></div>
-  <div class="panel-body">
-       
-    
-    
-    <h4>Arguments</h4>
-    
-      
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>class(<a href='../type/testrealarrval.html'>TestRealArrVal</a>),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
-  <td><strong>self</strong></td><td><p>Run test on real arrays and print summary report for images.</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-      
-    
-    
-
-  
-  
-  
-  
-     <h4>Return Value <small>integer
-  </small></h4>
-  
-    
-
-  </div>
-  </div>
-
-    
     </section>
     <br>
     
@@ -2054,108 +2054,6 @@ public function <a href='../proc/runtestrealarrval.html'>runTestRealArrVal</a>(s
     
     <section>
     <h2>Subroutines</h2>
-    
-    
-  <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-deletetestsuite"></span><h3>
-public subroutine <a href='../proc/deletetestsuite.html'>deleteTestSuite</a>(self)
-    
-    
-   
-</h3></div>
-  <div class="panel-body">
-       
-    
-    
-    <h4>Arguments</h4>
-    
-      
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>type(<a href='../type/testsuite.html'>TestSuite</a>),</td>
-  <td>intent(inout)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
-  <td><strong>self</strong></td><td><p>Destruct a test suite by deallocating its test pointer attribute.</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-      
-    
-    
-
-  </div>
-  </div>
-
-    
-    
-  <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-runtests"></span><h3>
-public subroutine <a href='../proc/runtests.html'>runTests</a>(self)
-    
-    
-   
-</h3></div>
-  <div class="panel-body">
-       
-    
-    
-    <h4>Arguments</h4>
-    
-      
-      
-<table class="table table-striped varlist">
-<thead><tr><th>Type</th>
-<th>Intent</th><th>Optional</th>
-<th>Attributes</th><th></th><th>Name</th><th></th></thead>
-
-
-
-<tbody>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>class(<a href='../type/testsuite.html'>TestSuite</a>),</td>
-  <td>intent(in)</td>
-  <td></td>
-  
-  <td></td><td>::</td>
-  <td><strong>self</strong></td><td><p>Run all tests contained in a test suite.</p></td>
-  
-</tr>
-
-</tbody>
-</table>
-
-      
-    
-    
-
-  </div>
-  </div>
-
     
     
   <div class="panel panel-default">
@@ -2225,6 +2123,58 @@ public subroutine <a href='../proc/addunittest.html'>addUnitTest</a>(self, ut)
     
     
   <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-deletetestrealarrval"></span><h3>
+public subroutine <a href='../proc/deletetestrealarrval.html'>deleteTestRealArrVal</a>(self)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/testrealarrval.html'>TestRealArrVal</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>self</strong></td><td><p>Destruct TestRealVal object by deallocating its next object pointer
+ as well as its res and tgt arrays.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="proc-deletetestrealval"></span><h3>
 public subroutine <a href='../proc/deletetestrealval.html'>deleteTestRealVal</a>(self)
     
@@ -2276,8 +2226,8 @@ public subroutine <a href='../proc/deletetestrealval.html'>deleteTestRealVal</a>
     
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-deletetestrealarrval"></span><h3>
-public subroutine <a href='../proc/deletetestrealarrval.html'>deleteTestRealArrVal</a>(self)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-deletetestsuite"></span><h3>
+public subroutine <a href='../proc/deletetestsuite.html'>deleteTestSuite</a>(self)
     
     
    
@@ -2305,13 +2255,101 @@ public subroutine <a href='../proc/deletetestrealarrval.html'>deleteTestRealArrV
   
 <tr>
   
-  <td><span class="anchor" ></span>type(<a href='../type/testrealarrval.html'>TestRealArrVal</a>),</td>
+  <td><span class="anchor" ></span>type(<a href='../type/testsuite.html'>TestSuite</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>self</strong></td><td><p>Destruct TestRealVal object by deallocating its next object pointer
- as well as its res and tgt arrays.</p></td>
+  <td><strong>self</strong></td><td><p>Destruct a test suite by deallocating its test pointer attribute.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+  </div>
+  </div>
+
+    
+    
+  <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-printfailtestrealarrval"></span><h3>
+public subroutine <a href='../proc/printfailtestrealarrval.html'>printFailTestRealArrVal</a>(img, res, tgt)
+    
+    
+   
+</h3></div>
+  <div class="panel-body">
+       
+    
+
+
+
+
+
+
+
+<p>(Correct) target result array of some procedure.</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>integer,</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>img</strong></td><td><p>Print failure message of a real array comparrison.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=wp),</td>
+  <td>intent(in),</td>
+  <td></td>
+  
+  <td>dimension(:)</td><td>::</td>
+  <td><strong>res</strong></td><td><p>Image where the failure occured.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=wp),</td>
+  <td>intent(in),</td>
+  <td></td>
+  
+  <td>dimension(:)</td><td>::</td>
+  <td><strong>tgt</strong></td><td><p>(Incorrect) result array of some procedure.</p></td>
   
 </tr>
 
@@ -2417,8 +2455,8 @@ public subroutine <a href='../proc/printfailtestrealval.html'>printFailTestRealV
     
     
   <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-printfailtestrealarrval"></span><h3>
-public subroutine <a href='../proc/printfailtestrealarrval.html'>printFailTestRealArrVal</a>(img, res, tgt)
+  <div class="panel-heading codesum"><span class="anchor" id="proc-runtests"></span><h3>
+public subroutine <a href='../proc/runtests.html'>runTests</a>(self)
     
     
    
@@ -2426,14 +2464,6 @@ public subroutine <a href='../proc/printfailtestrealarrval.html'>printFailTestRe
   <div class="panel-body">
        
     
-
-
-
-
-
-
-
-<p>(Correct) target result array of some procedure.</p>
     
     <h4>Arguments</h4>
     
@@ -2454,42 +2484,12 @@ public subroutine <a href='../proc/printfailtestrealarrval.html'>printFailTestRe
   
 <tr>
   
-  <td><span class="anchor" ></span>integer,</td>
+  <td><span class="anchor" ></span>class(<a href='../type/testsuite.html'>TestSuite</a>),</td>
   <td>intent(in)</td>
   <td></td>
   
   <td></td><td>::</td>
-  <td><strong>img</strong></td><td><p>Print failure message of a real array comparrison.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
-  <td><strong>res</strong></td><td><p>Image where the failure occured.</p></td>
-  
-</tr>
-
-  
-  
-  
-  
-<tr>
-  
-  <td><span class="anchor" ></span>real(kind=wp),</td>
-  <td>intent(in),</td>
-  <td></td>
-  
-  <td>dimension(:)</td><td>::</td>
-  <td><strong>tgt</strong></td><td><p>(Incorrect) result array of some procedure.</p></td>
+  <td><strong>self</strong></td><td><p>Run all tests contained in a test suite.</p></td>
   
 </tr>
 
@@ -2524,10 +2524,10 @@ public subroutine <a href='../proc/printfailtestrealarrval.html'>printFailTestRe
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/cmacmackin/ford">FORD</a>
-            
+             on 2021-05-22 17:22  
           </p>
         </div>
-        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> Fortran Program was developed by </p></div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> renatomatz/cafut was developed by Renato Zimmermann</p></div>
       </div>
       <br>
       </div> <!-- /container -->    

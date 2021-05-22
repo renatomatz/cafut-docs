@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
    
-    <meta name="description" content="Documentation for Fortran Program">
-   
-    <meta name="author" content="" >
+   <meta name="description" content="Unit Testing for Coarray Fortran">
+    
+    <meta name="author" content="Renato Zimmermann" >
     <link rel="icon" href="../favicon.png">
 
-    <title>addUnitTest &ndash; Fortran Program</title>
+    <title>addUnitTest &ndash; renatomatz/cafut</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -44,7 +44,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">Fortran Program </a>
+          <a class="navbar-brand" href="../index.html">renatomatz/cafut </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -170,6 +170,16 @@
 
 
 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../proc/addunittest.html#variable-next">next</a>
+      
+    </div>
+  </div>
+</div>
 
 
 
@@ -188,7 +198,15 @@
 
 
 
-<em>None</em>
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../proc/addunittest.html#src">addUnitTest</a>
+  </div>
+</div>
+
 
 
 </div>
@@ -226,7 +244,7 @@ public subroutine addUnitTest(self, ut)
   
 <tr>
   
-  <td><span class="anchor" id="variable-self~6"></span>class(<a href='../type/testsuite.html'>TestSuite</a>),</td>
+  <td><span class="anchor" id="variable-self~4"></span>class(<a href='../type/testsuite.html'>TestSuite</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
@@ -267,6 +285,16 @@ public subroutine addUnitTest(self, ut)
 
 
 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../proc/addunittest.html#variable-next">next</a>
+      
+    </div>
+  </div>
+</div>
 
 
 
@@ -285,7 +313,15 @@ public subroutine addUnitTest(self, ut)
 
 
 
-<em>None</em>
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
+  <div class="list-group">
+    <a class="list-group-item" href="../proc/addunittest.html#src">addUnitTest</a>
+  </div>
+</div>
+
 
 
     </section>
@@ -294,6 +330,38 @@ public subroutine addUnitTest(self, ut)
     
 
     
+    <section>    
+      <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-next"></span>class(Test),</td>
+  
+  <td>public,</td>
+  <td>pointer</td><td>::</td>
+  <td><strong>next</strong></td><td></td><td></td><td><p>Object derived from the Test abstract type.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
+    
     
     
     
@@ -308,6 +376,30 @@ public subroutine addUnitTest(self, ut)
 
     
     
+    
+    <section>
+    <h2><span class="anchor" id="src"></span>Source Code</h2>
+    <div class="highlight"><pre><span></span><span class="k">subroutine </span><span class="n">addUnitTest</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">ut</span><span class="p">)</span>
+    <span class="c">!&gt; Add a Test object to the test suite and make it available for setup.</span>
+
+    <span class="k">class</span><span class="p">(</span><span class="n">TestSuite</span><span class="p">),</span> <span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span> <span class="kd">::</span> <span class="n">self</span>
+    <span class="k">class</span><span class="p">(</span><span class="n">Test</span><span class="p">),</span> <span class="k">target</span><span class="p">,</span> <span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span> <span class="kd">::</span> <span class="n">ut</span>
+        <span class="c">!&gt; Object derived from the Test abstract type.</span>
+
+    <span class="k">class</span><span class="p">(</span><span class="n">Test</span><span class="p">),</span> <span class="k">pointer</span> <span class="kd">::</span> <span class="n">next</span>
+        
+    <span class="k">if</span> <span class="p">(</span><span class="nb">this_image</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="n">self</span><span class="p">%</span><span class="n">n_tests</span> <span class="o">=</span> <span class="n">self</span><span class="p">%</span><span class="n">n_tests</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">allocate</span><span class="p">(</span><span class="n">next</span><span class="p">)</span>
+
+    <span class="n">next</span> <span class="o">=&gt;</span> <span class="n">self</span><span class="p">%</span><span class="n">test</span>
+    <span class="n">ut</span><span class="p">%</span><span class="n">next</span> <span class="o">=&gt;</span> <span class="n">next</span>
+    <span class="n">self</span><span class="p">%</span><span class="n">test</span> <span class="o">=&gt;</span> <span class="n">ut</span>
+<span class="k">end subroutine </span><span class="n">addUnitTest</span>
+</pre></div>
+
+    </section>
+    <br>
     
     
     </div>
@@ -325,10 +417,10 @@ public subroutine addUnitTest(self, ut)
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/cmacmackin/ford">FORD</a>
-            
+             on 2021-05-22 17:22  
           </p>
         </div>
-        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> Fortran Program was developed by </p></div>
+        <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> renatomatz/cafut was developed by Renato Zimmermann</p></div>
       </div>
       <br>
       </div> <!-- /container -->    
