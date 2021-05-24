@@ -157,10 +157,30 @@ caf -c cafut.f90
 </code></pre></div>
 
 <p>You can then <code>use</code> the package in your testing programs with <code>use cafut</code>.</p>
-<h1>Objects</h1>
-<p>TODO: write description of the main objects.</p>
 <h1>Examples</h1>
-<p>TODO: write examples</p>
+<p>This framework centers around creating a linked list of unit tests. The two principal objects of the framework are the <code>TestSuite</code>, which is the first node of the linked list, and types extending the <code>Test</code> abstract type, which are the nodes of the list. In other words, the <code>TestSuite</code> type contains any number of <code>Test</code> objects, which it will execute and collect data from.</p>
+<p>To create a new test suite, simply instanciate a <code>TestSuite</code> object, giving it an appropriate name.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">ts</span> <span class="o">=</span> <span class="n">TestSuite</span><span class="p">(</span><span class="s2">&quot;TEST 1&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<p>There are two ways to add new tests to a <code>TestSuite</code> object. One is to create and set up a <code>Test</code> instance externally and then add said the instance to the test suite.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">trv</span> <span class="o">=</span> <span class="n">TestRealVal</span><span class="p">(</span><span class="s2">&quot;subtest 1.2&quot;</span><span class="p">)</span>
+<span class="n">trv</span><span class="p">%</span><span class="n">res</span> <span class="o">=</span> <span class="mf">1.</span> <span class="o">+</span> <span class="mf">1.</span>
+<span class="n">trv</span><span class="p">%</span><span class="n">tgt</span> <span class="o">=</span> <span class="mf">2.</span>
+<span class="k">call </span><span class="n">ts</span><span class="p">%</span><span class="n">add</span><span class="p">(</span><span class="n">trv</span><span class="p">)</span>
+</code></pre></div>
+
+<p>The other is to add a test directly into the test suite by using one of the subroutines linked to the <code>add</code> generic procedure. To do this, just specify the new <code>Test</code> instance (which must be constructed with a name) as the first argument to the <code>add</code> procedure followed by the required arguments.</p>
+<div class="codehilite"><pre><span></span><code><span class="k">call </span><span class="n">ts</span><span class="p">%</span><span class="n">add</span><span class="p">(</span><span class="n">TestRealVal</span><span class="p">(</span><span class="s2">&quot;subtest 1.1&quot;</span><span class="p">),</span> <span class="mf">1.</span><span class="o">+</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>NOTE</strong> that tests which involve arrays which are created externally must allocate the relevant attributes externally as well.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">trav</span> <span class="o">=</span> <span class="n">TestRealArrVal</span><span class="p">(</span><span class="s2">&quot;subtest 1.3&quot;</span><span class="p">)</span>
+<span class="k">allocate</span><span class="p">(</span><span class="n">trav</span><span class="p">%</span><span class="n">res</span><span class="p">(</span><span class="mi">2</span><span class="p">),</span> <span class="n">trav</span><span class="p">%</span><span class="n">tgt</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">trav2</span><span class="p">%</span><span class="n">res</span> <span class="o">=</span> <span class="p">[</span><span class="mf">1.</span><span class="p">,</span> <span class="mf">1.</span><span class="p">]</span>
+<span class="n">trav2</span><span class="p">%</span><span class="n">tgt</span> <span class="o">=</span> <span class="p">[</span><span class="mf">2.</span><span class="p">,</span> <span class="mf">2.</span><span class="p">]</span>
+<span class="k">call </span><span class="n">ts</span><span class="p">%</span><span class="n">add</span><span class="p">(</span><span class="n">trav</span><span class="p">)</span>
+</code></pre></div>
         </div>
 		  
         <div class="col-md-4">
@@ -221,6 +241,14 @@ caf -c cafut.f90
               <ul>
                 
                   
+                    <li><a href='./proc/addtestrealarrval.html'>addTestRealArrVal</a></li>
+                  
+                
+                  
+                    <li><a href='./proc/addtestrealval.html'>addTestRealVal</a></li>
+                  
+                
+                  
                     <li><a href='./proc/addunittest.html'>addUnitTest</a></li>
                   
                 
@@ -253,15 +281,11 @@ caf -c cafut.f90
                   
                 
                   
-                    <li><a href='./proc/printfailtestrealval.html'>printFailTestRealVal</a></li>
-                  
-                
-                  
-                    <li><a href='./interface/realarrcompinterface.html'>realArrCompInterface</a></li>
-                  
-                
-                  
                     <li><a href="./lists/procedures.html"><em>All procedures&hellip;</em></a></li>
+                  
+                
+                  
+                
                   
                 
                   
@@ -316,7 +340,7 @@ caf -c cafut.f90
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/cmacmackin/ford">FORD</a>
-             on 2021-05-22 19:46  
+             on 2021-05-23 21:08  
           </p>
         </div>
         <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> cafut was developed by Renato Zimmermann</p></div>

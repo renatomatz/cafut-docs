@@ -10,7 +10,7 @@
     <meta name="author" content="Renato Zimmermann" >
     <link rel="icon" href="../favicon.png">
 
-    <title>deleteTestSuite &ndash; cafut</title>
+    <title>addTestRealArrVal &ndash; cafut</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
@@ -112,7 +112,7 @@
     
   
   <div class="row">
-    <h1>deleteTestSuite
+    <h1>addTestRealArrVal
       <small>Subroutine</small>
     
     </h1>
@@ -130,7 +130,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title=" 1.8% of total for procedures.">4 statements</a>
+    title=" 8.8% of total for procedures.">19 statements</a>
      </li> 
      
      
@@ -147,7 +147,7 @@
      <li><a href='../module/cafut.html'>cafut</a></li>
     
   
-     <li class="active">deleteTestSuite</li>
+     <li class="active">addTestRealArrVal</li>
   </ol>
 </div>
 </div>
@@ -170,6 +170,18 @@
 
 
 
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-0">Variables</a></h3></div>
+  <div id="vars-0" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../proc/addtestrealarrval.html#variable-next">next</a>
+      
+    </div>
+  </div>
+</div>
+
+
 
 
 
@@ -191,7 +203,7 @@
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
-    <a class="list-group-item" href="../proc/deletetestsuite.html#src">deleteTestSuite</a>
+    <a class="list-group-item" href="../proc/addtestrealarrval.html#src">addTestRealArrVal</a>
   </div>
 </div>
 
@@ -203,7 +215,7 @@
     
     <div class="col-md-9" id='text'>
     <h2>
-public subroutine deleteTestSuite(self)
+public subroutine addTestRealArrVal(self, ut, res, tgt)
     
     
    
@@ -213,7 +225,7 @@ public subroutine deleteTestSuite(self)
 
 
     
-    <p>Destruct a test suite by deallocating its test pointer attribute.</p>
+    <p>Compact alternative to add a TestRealArrVal object to the test suite.</p>
     
 
     <h3>Arguments</h3>
@@ -234,12 +246,57 @@ public subroutine deleteTestSuite(self)
   
 <tr>
   
-  <td><span class="anchor" id="variable-self~9"></span>type(<a href='../type/testsuite.html'>TestSuite</a>),</td>
+  <td><span class="anchor" id="variable-self~4"></span>class(<a href='../type/testsuite.html'>TestSuite</a>),</td>
   <td>intent(inout)</td>
   <td></td>
   
   <td></td><td>::</td>
   <td><strong>self</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-ut"></span>type(<a href='../type/testrealarrval.html'>TestRealArrVal</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>ut</strong></td><td><p>An initialized TestRealArrVal object with the desired name.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-res~7"></span>real(kind=wp),</td>
+  <td></td>
+  <td></td>
+  
+  <td>allocatable, dimension(:)</td><td>::</td>
+  <td><strong>res</strong></td><td><p>See TestRealArrVal.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-tgt~7"></span>real(kind=wp),</td>
+  <td></td>
+  <td></td>
+  
+  <td>allocatable, dimension(:)</td><td>::</td>
+  <td><strong>tgt</strong></td><td><p>See TestRealArrVal.</p></td>
   
 </tr>
 
@@ -258,6 +315,18 @@ public subroutine deleteTestSuite(self)
 <h3>Contents</h3>
  
 
+
+
+<div class="panel panel-primary">
+  <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#vars-1">Variables</a></h3></div>
+  <div id="vars-1" class="panel-collapse collapse">
+    <div class="list-group">
+      
+      <a class="list-group-item" href="../proc/addtestrealarrval.html#variable-next">next</a>
+      
+    </div>
+  </div>
+</div>
 
 
 
@@ -281,7 +350,7 @@ public subroutine deleteTestSuite(self)
 <div class="panel panel-primary">
   <div class="panel-heading text-left"><h3 class="panel-title">Source Code</h3></div>
   <div class="list-group">
-    <a class="list-group-item" href="../proc/deletetestsuite.html#src">deleteTestSuite</a>
+    <a class="list-group-item" href="../proc/addtestrealarrval.html#src">addTestRealArrVal</a>
   </div>
 </div>
 
@@ -292,6 +361,38 @@ public subroutine deleteTestSuite(self)
 
     
 
+    
+    <section>    
+      <h2>Variables</h2>
+    
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Visibility</th>
+
+<th>Attributes</th><th></th><th>Name</th><th></th><th>Initial</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" id="variable-next"></span>class(Test),</td>
+  
+  <td>public,</td>
+  <td>pointer</td><td>::</td>
+  <td><strong>next</strong></td><td></td><td></td><td></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+    </section>
+    <br>
     
     
     
@@ -310,12 +411,34 @@ public subroutine deleteTestSuite(self)
     
     <section>
     <h2><span class="anchor" id="src"></span>Source Code</h2>
-    <div class="highlight"><pre><span></span><span class="k">subroutine </span><span class="n">deleteTestSuite</span><span class="p">(</span><span class="n">self</span><span class="p">)</span>
-    <span class="c">!! Destruct a test suite by deallocating its test pointer attribute.</span>
-    <span class="k">type</span><span class="p">(</span><span class="n">TestSuite</span><span class="p">),</span> <span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span> <span class="kd">::</span> <span class="n">self</span>
+    <div class="highlight"><pre><span></span><span class="k">subroutine </span><span class="n">addTestRealArrVal</span><span class="p">(</span><span class="n">self</span><span class="p">,</span> <span class="n">ut</span><span class="p">,</span> <span class="n">res</span><span class="p">,</span> <span class="n">tgt</span><span class="p">)</span>
+    <span class="c">!! Compact alternative to add a TestRealArrVal object to the test suite.</span>
 
-    <span class="k">deallocate</span><span class="p">(</span><span class="n">self</span><span class="p">%</span><span class="n">test</span><span class="p">)</span>
-<span class="k">end subroutine </span><span class="n">deleteTestSuite</span>
+    <span class="k">class</span><span class="p">(</span><span class="n">TestSuite</span><span class="p">),</span> <span class="k">intent</span><span class="p">(</span><span class="n">inout</span><span class="p">)</span> <span class="kd">::</span> <span class="n">self</span>
+    <span class="k">type</span><span class="p">(</span><span class="n">TestRealArrVal</span><span class="p">),</span> <span class="k">intent</span><span class="p">(</span><span class="n">in</span><span class="p">)</span> <span class="kd">::</span> <span class="n">ut</span>
+        <span class="c">!! An initialized TestRealArrVal object with the desired name.</span>
+    <span class="kt">real</span><span class="p">(</span><span class="nb">kind</span><span class="o">=</span><span class="n">wp</span><span class="p">),</span> <span class="k">allocatable</span><span class="p">,</span> <span class="k">dimension</span><span class="p">(:)</span> <span class="kd">::</span> <span class="n">res</span><span class="p">,</span> <span class="n">tgt</span>
+        <span class="c">!! See TestRealArrVal.</span>
+
+    <span class="k">class</span><span class="p">(</span><span class="n">Test</span><span class="p">),</span> <span class="k">pointer</span> <span class="kd">::</span> <span class="n">next</span>
+        
+    <span class="k">if</span> <span class="p">(</span><span class="nb">this_image</span><span class="p">()</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span> <span class="n">self</span><span class="p">%</span><span class="n">n_tests</span> <span class="o">=</span> <span class="n">self</span><span class="p">%</span><span class="n">n_tests</span> <span class="o">+</span> <span class="mi">1</span>
+
+    <span class="k">allocate</span><span class="p">(</span><span class="n">next</span><span class="p">)</span>
+    <span class="n">next</span> <span class="o">=&gt;</span> <span class="n">self</span><span class="p">%</span><span class="n">test</span>
+
+    <span class="k">allocate</span><span class="p">(</span><span class="n">self</span><span class="p">%</span><span class="n">test</span><span class="p">,</span> <span class="n">source</span><span class="o">=</span><span class="n">ut</span><span class="p">)</span>
+
+    <span class="k">associate</span> <span class="p">(</span><span class="n">t</span> <span class="o">=&gt;</span> <span class="n">self</span><span class="p">%</span><span class="n">test</span><span class="p">)</span>
+    <span class="k">select type</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+    <span class="k">type is</span> <span class="p">(</span><span class="n">TestRealArrVal</span><span class="p">)</span>
+        <span class="n">t</span><span class="p">%</span><span class="n">next</span> <span class="o">=&gt;</span> <span class="n">next</span>
+        <span class="n">t</span><span class="p">%</span><span class="n">test_name</span> <span class="o">=</span> <span class="n">ut</span><span class="p">%</span><span class="n">test_name</span>
+        <span class="n">t</span><span class="p">%</span><span class="n">res</span> <span class="o">=</span> <span class="n">res</span>
+        <span class="n">t</span><span class="p">%</span><span class="n">tgt</span> <span class="o">=</span> <span class="n">tgt</span>
+    <span class="k">end select</span>
+<span class="k">    end associate</span>
+<span class="k">end subroutine </span><span class="n">addTestRealArrVal</span>
 </pre></div>
 
     </section>

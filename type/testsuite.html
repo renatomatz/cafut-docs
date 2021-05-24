@@ -130,7 +130,7 @@
      <li><i class="fa fa-list-ol"></i>
        <a data-toggle="tooltip"
     data-placement="bottom" data-html="true"
-    title="<p>33.3% of total for derived types.</p>Including implementation: 35 statements, 24.5% of total for derived types.">9 statements</a>
+    title="<p>38.5% of total for derived types.</p>Including implementation: 124 statements, 53.4% of total for derived types.">12 statements</a>
      </li> 
      
      
@@ -227,6 +227,8 @@
       
       <a class="list-group-item" href="../type/testsuite.html#boundprocedure-add">add</a>
       
+      <a class="list-group-item" href="../type/testsuite.html#boundprocedure-addunittest">addUnitTest</a>
+      
       <a class="list-group-item" href="../type/testsuite.html#boundprocedure-runtests">runTests</a>
       
     </div>
@@ -322,6 +324,8 @@
     <div class="list-group">
       
       <a class="list-group-item" href="../type/testsuite.html#boundprocedure-add">add</a>
+      
+      <a class="list-group-item" href="../type/testsuite.html#boundprocedure-addunittest">addUnitTest</a>
       
       <a class="list-group-item" href="../type/testsuite.html#boundprocedure-runtests">runTests</a>
       
@@ -555,7 +559,304 @@ public subroutine <a href='../proc/deletetestsuite.html'>deleteTestSuite</a>(sel
     
      
 <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-add"></span><h3>procedure, public, pass :: <strong>add</strong>  => <a href='../proc/addunittest.html'>addUnitTest</a> 
+  <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-add"></span><h3>generic, public :: <strong>add</strong>  => <a href='../type/testsuite.html#boundprocedure-addunittest'>addUnitTest</a>, addTestRealVal, addTestRealArrVal 
+    
+  </h3></div>
+  
+  <ul class="list-group">
+    
+      <li class="list-group-item">
+      
+         
+            
+    
+    <h3>
+public subroutine <a href='../proc/addunittest.html'>addUnitTest</a>(self, ut)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Add a Test object to the test suite and make it available for setup.</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/testsuite.html'>TestSuite</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>self</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(Test),</td>
+  <td>intent(inout),</td>
+  <td></td>
+  
+  <td>target</td><td>::</td>
+  <td><strong>ut</strong></td><td><p>Object derived from the Test abstract type.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+         
+      
+      </li>
+    
+      <li class="list-group-item">
+      
+         
+            
+    
+    <h3>
+public subroutine <a href='../proc/addtestrealval.html'>addTestRealVal</a>(self, ut, res, tgt)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Compact alternative to add a TestRealVal object to the test suite.</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/testsuite.html'>TestSuite</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>self</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/testrealval.html'>TestRealVal</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>ut</strong></td><td><p>An initialized TestRealVal object with the desired name.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=wp),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>res</strong></td><td><p>See TestRealVal.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=wp),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>tgt</strong></td><td><p>See TestRealVal.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+         
+      
+      </li>
+    
+      <li class="list-group-item">
+      
+         
+            
+    
+    <h3>
+public subroutine <a href='../proc/addtestrealarrval.html'>addTestRealArrVal</a>(self, ut, res, tgt)
+    
+    
+   
+</h3>
+    
+
+
+
+
+
+
+
+<p>Compact alternative to add a TestRealArrVal object to the test suite.</p>
+    
+    <h4>Arguments</h4>
+    
+      
+      
+<table class="table table-striped varlist">
+<thead><tr><th>Type</th>
+<th>Intent</th><th>Optional</th>
+<th>Attributes</th><th></th><th>Name</th><th></th></thead>
+
+
+
+<tbody>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>class(<a href='../type/testsuite.html'>TestSuite</a>),</td>
+  <td>intent(inout)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>self</strong></td><td></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>type(<a href='../type/testrealarrval.html'>TestRealArrVal</a>),</td>
+  <td>intent(in)</td>
+  <td></td>
+  
+  <td></td><td>::</td>
+  <td><strong>ut</strong></td><td><p>An initialized TestRealArrVal object with the desired name.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=wp),</td>
+  <td></td>
+  <td></td>
+  
+  <td>allocatable, dimension(:)</td><td>::</td>
+  <td><strong>res</strong></td><td><p>See TestRealArrVal.</p></td>
+  
+</tr>
+
+  
+  
+  
+  
+<tr>
+  
+  <td><span class="anchor" ></span>real(kind=wp),</td>
+  <td></td>
+  <td></td>
+  
+  <td>allocatable, dimension(:)</td><td>::</td>
+  <td><strong>tgt</strong></td><td><p>See TestRealArrVal.</p></td>
+  
+</tr>
+
+</tbody>
+</table>
+
+      
+    
+    
+
+         
+      
+      </li>
+    
+  </ul>
+</div>
+
+    
+     
+<div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="boundprocedure-addunittest"></span><h3>procedure, public, pass :: <strong>addUnitTest</strong>  
     
   </h3></div>
   
@@ -732,8 +1033,12 @@ public subroutine <a href='../proc/runtests.html'>runTests</a>(self)
 
 <span class="k">contains</span>
 
-<span class="k">    procedure</span><span class="p">,</span> <span class="k">pass</span> <span class="kd">::</span> <span class="n">add</span> <span class="o">=&gt;</span> <span class="n">addUnitTest</span>
-    <span class="k">procedure</span><span class="p">,</span> <span class="k">pass</span> <span class="kd">::</span> <span class="n">runTests</span>
+<span class="k">    procedure</span><span class="p">,</span> <span class="k">public</span><span class="p">,</span> <span class="k">pass</span> <span class="kd">::</span> <span class="n">addUnitTest</span>
+    <span class="k">procedure</span><span class="p">,</span> <span class="k">private</span><span class="p">,</span> <span class="k">pass</span> <span class="kd">::</span> <span class="n">addTestRealVal</span>
+    <span class="k">procedure</span><span class="p">,</span> <span class="k">private</span><span class="p">,</span> <span class="k">pass</span> <span class="kd">::</span> <span class="n">addTestRealArrVal</span>
+    <span class="k">generic</span><span class="p">,</span> <span class="k">public</span> <span class="kd">::</span> <span class="n">add</span> <span class="o">=&gt;</span> <span class="n">addUnitTest</span><span class="p">,</span> <span class="n">addTestRealVal</span><span class="p">,</span> <span class="n">addTestRealArrVal</span>
+
+    <span class="k">procedure</span><span class="p">,</span> <span class="k">public</span><span class="p">,</span> <span class="k">pass</span> <span class="kd">::</span> <span class="n">runTests</span>
     <span class="k">final</span> <span class="kd">::</span> <span class="n">deleteTestSuite</span>
 
 <span class="k">end type </span><span class="n">TestSuite</span>
@@ -757,7 +1062,7 @@ public subroutine <a href='../proc/runtests.html'>runTests</a>(self)
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/cmacmackin/ford">FORD</a>
-             on 2021-05-22 19:46  
+             on 2021-05-23 21:08  
           </p>
         </div>
         <div class="col-xs-12 col-md-4 col-md-pull-4"><p class="text-center"> cafut was developed by Renato Zimmermann</p></div>
